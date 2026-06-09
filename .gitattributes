@@ -1,0 +1,30 @@
+# Set default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files we want to always normalize and use LF endings.
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+package-lock.json text eol=lf
+
+# Keep binary files as binary.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.mp4 binary
+*.mov binary
+
+# Ensure public assets and source files are normalized.
+/public/** text=auto
+/src/** text=auto
